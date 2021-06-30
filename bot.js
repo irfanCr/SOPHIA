@@ -565,7 +565,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                 await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:
    
-     
+     }
+
+            return;
      
         // ==================== End Greetings ====================
 
