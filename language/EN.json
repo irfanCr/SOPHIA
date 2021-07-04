@@ -113,7 +113,7 @@
             "GOODBYE_ALREADY_SETTED": "*✅ Goodbye message has been set!*\n*Message:* ```",
             "NEED_GOODBYE_TEXT": "*You must write a message to set up the goodbye message.*\n*Example:* ```.goodbye Goodbye!```",
             "GOODBYE_DELETED": "*✅ Goodbye message has been deleted successfully!*",
-            "GOODBYE_SETTED": "*✅ Goodbye message Set aaki aliyaa🙂!*"
+            "GOODBYE_SETTED": "*✅ Goodbye message Set aaki aliyaa🙂 bot creatrd by ichu. mm..!*"
         },
         "lydia": {
             "ADDLYDIA_DESC": "Activates Lydia (AI) for the user.",
@@ -166,7 +166,7 @@
         },
         "removebg": {
             "REMOVEBG_DESC": "Removes the background of the photos.",
-            "NEED_PHOTO": "*photo thaa mister!*",
+            "NEED_PHOTO": "*photo tharathe background remove aakkan sakeerbayikk patto!*",
             "NO_API_KEY": "*Api key illa aliyaa*\n```remove.bg login for apikey```",
             "RBGING": "```Removing...```"
         },
@@ -184,9 +184,9 @@
             "TTS_DESC": "It converts text to sound.",
             "TTS_ERROR": "```Error, Speech example of your sentence couldn't be made!```",
             "SONG_DESC": "Uploads the song you wrote.",
-            "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song Naadan Vibe```",
+            "NEED_TEXT_SONG": "*Song nte name koodi ayakk aliyaa !*\n*Example:* ```.song Naadan Vibe```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "\n*Searching your song 🎶*\n",
+            "DOWNLOADING_SONG": "\n*seraching your song 🎶*\n",
             "UPLOADING_SONG": "\n*Uploading 📲 Use 🎧*\n",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
@@ -203,7 +203,7 @@
         },
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
-            "NEED_REPLY": "*Reply to a photo or video!*",
+            "NEED_REPLY": "*photo allengil video thaa manushyaa😁!*",
             "DOWNLOADING": "```oru 5 second wait aak aliyaa set aaki tharam ```"
         },
         "system_stats": {
@@ -212,7 +212,7 @@
         },
         "tagall": {
             "TAGALL_DESC": "Tags everyone in the group.",
-            "ADMİN": "*I am not admin in this group!*"
+            "ADMİN": "*enne aadym admin aakk machaa!*"
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
