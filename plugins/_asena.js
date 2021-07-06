@@ -144,7 +144,7 @@ if (Config.WORKTYPE == 'private') {
 
 /*slf*/
 
-Asena.addCommand({pattern: 'phelp ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'pmenu ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     var CMD_HELP = '';
 
