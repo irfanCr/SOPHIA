@@ -168,7 +168,7 @@ Asena.addCommand({pattern: 'logo$', fromMe: wk, desc: desc_msg}, (async (message
         command_cmd + '```.cup``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '*.cup ICHUTECH*\n\n' +
         command_cmd + '```.cemetery``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '*.cemetery ICHUTECH*\n\n' +
         command_cmd + '```.glitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.glitch YOUTUBE;ICHUTECH*\n\n' +
-        command_cmd + '```.firework```\n'+ desc_cmd + t30 + '_\n + usage_cmd + '.*firework ichu*\n\n' +
+        command_cmd + '```.firework```\n' + desc_cmd + t30 + '_\n' + usage_cmd + '*.firework ichu*\n\n' +
        
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
