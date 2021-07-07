@@ -65,6 +65,8 @@ Asena.addCommand({pattern: 'logo$', fromMe: wk, desc: desc_msg}, (async (message
     var t27 = ''
     var t28 = ''
     var t29 = ''
+    var t29 = ''
+    var t30 = ''
     if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
         t1 = 'Şeytan Temalı Logo Yapar.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
         t2 = 'Ayı İkonu İçeren Logo Yapar.' // https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html
@@ -94,6 +96,7 @@ Asena.addCommand({pattern: 'logo$', fromMe: wk, desc: desc_msg}, (async (message
         t27 = '4. Bir Neon Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html
         t28 = 'Mezarlık Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/text-on-scary-cemetery-gate-172.html
         t29 = 'Kupa Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/put-text-on-the-cup-387.html
+        t30 = 'firework theamed logo. ' // https://textpro.me/firework-sparkle-text-effect-930.html
     }
     else {
         t1 = 'Makes Devil Themed Logo.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
@@ -124,6 +127,7 @@ Asena.addCommand({pattern: 'logo$', fromMe: wk, desc: desc_msg}, (async (message
         t27 = 'Makes a Fourth Neon-Themed Logo.' // https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html
         t28 = 'Makes a Cemetery Themed Logo.' // https://photooxy.com/logo-and-text-effects/text-on-scary-cemetery-gate-172.html
         t29 = 'Makes a Cup Themed Logo.' // https://photooxy.com/logo-and-text-effects/put-text-on-the-cup-387.html
+        t30 = 'makes a fireworked theme logo.' // https://textpro.me/firework-sparkle-text-effect-930.html
     }
     var usage_cmd = ''
     var command_cmd = ''
@@ -163,7 +167,9 @@ Asena.addCommand({pattern: 'logo$', fromMe: wk, desc: desc_msg}, (async (message
         command_cmd + '```.harry``` \n' + desc_cmd + t26 + '_\n' + usage_cmd + '*.harry ICHUTECH*\n\n' +
         command_cmd + '```.cup``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '*.cup ICHUTECH*\n\n' +
         command_cmd + '```.cemetery``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '*.cemetery ICHUTECH*\n\n' +
-        command_cmd + '```.glitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.glitch YOUTUBE;ICHUTECH*\n\n'
+        command_cmd + '```.glitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.glitch YOUTUBE;ICHUTECH*\n\n' +
+        command_cmd + '```.firework```\n'+ desc_cmd + t30 + '_\n + usage_cmd + '.*firework ichu*\n\n' +
+       
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
 Asena.addCommand({pattern: 'devil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
@@ -1515,3 +1521,38 @@ Asena.addCommand({pattern: 'glitch ?(.*)', fromMe: false, dontAddCommandList: tr
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Made by PublicBot'})
 
     }));
+Asena.addCommand({pattern: 'firework ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+
+    thiccysapi.textpro("https://textpro.me/firework-sparkle-text-effect-930.html",
+
+        `${match[1]}`
+
+        ).then(async (data) => { 
+
+          try { 
+
+              var download = async(uri, filename, callback) => {
+
+                  await request.head(uri, async(err, res, body) => {    
+
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+
+                  });
+
+              };
+
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/devil.jpg', async() => {                          
+
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/devil.jpg'), MessageType.image, { caption: '```PublicBot```' })
+
+              })
+
+          } catch(err) { 
+
+              console.log(err)
+
+          } 
+
+    });
+
+}));
